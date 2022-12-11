@@ -92,7 +92,7 @@ You are suggested to install [bear](https://github.com/rizsotto/Bear),
 then use command `bear -- ` before the above commands. 
 For example, 
 
-* `$ bear -- make`    
+* `$ bear -- make debug`    
 * `$ bear -- make test`
 
 [Makefile:](./Makefile)
