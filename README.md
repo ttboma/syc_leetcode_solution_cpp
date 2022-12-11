@@ -274,7 +274,18 @@ add_custom_target( cleanall
 )
 ```
 
-# TODO
+# Developer Notes
+  
+## How to push commits to this repository on github
+
+1. First login your github account: 
+2. click `Settings` -> `Developer settings` -> `Personal access token` 
+   -> `Tokens(classic)`
+3. Generate new token or revoke the **syc_push_repo_from_mac** 
+   personal access token (PAC)
+4. Then use git commands from your local. For example, `git push -u origin main`
+
+## TODO
 
 * [x] Reference to the *CMakeLists.txt* old project 
       and create one for this project, so that there 
