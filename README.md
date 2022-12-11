@@ -1,3 +1,18 @@
+# Table of Contents
+<!-- vim-markdown-toc GFM -->
+
+* [README](#readme)
+* [Structure of this Project](#structure-of-this-project)
+* [Necessaries and Dependencies](#necessaries-and-dependencies)
+* [Two ways to build this project](#two-ways-to-build-this-project)
+	* [Method1: Build this Project with *Makefile* (Suggested)](#method1-build-this-project-with-makefile-suggested)
+	* [Method2: Build this Project with *CMakeLists.txt*](#method2-build-this-project-with-cmakeliststxt)
+* [Developer Notes](#developer-notes)
+	* [How to push commits to this repository on github](#how-to-push-commits-to-this-repository-on-github)
+	* [TODO](#todo)
+
+<!-- vim-markdown-toc -->
+
 # README
 
 This project is a collection of 
