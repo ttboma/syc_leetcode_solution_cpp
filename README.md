@@ -24,7 +24,7 @@ track progress using **Git**.
 
 ## Structure of this Project
 
-```
+```txt
 syc_leetcode_solution_cpp
 ├── Makefile
 ├── README.md
@@ -53,7 +53,7 @@ syc_leetcode_solution_cpp
   `Solution` class should have a corresponding unit-test
   source with the its name prefixed with *'test_'* under
   the directory *src/tests*. For example, there should be a
-  *src/tests/test_fib.cpp* contains the 
+  *src/tests/test_fib.cpp* contains the
   unit-test code for `int Solution::fib(int n)` method.
 * *doc/*: directory contains some documentation materials
   
@@ -61,7 +61,7 @@ syc_leetcode_solution_cpp
 
 Prerequisite:
 
-* **C++17** compiler 
+* **C++17** compiler
 * **boost library**: you should provide the path to the
   **boost library** in the *Makefile*. For example, set the
   makefile variable  `BOOSTROOT` to the path to the
@@ -103,11 +103,11 @@ Notes:
 
 If you edit source files with **LSP** server: **clangd**.
 You are suggested to install [bear](https://github.com/rizsotto/Bear),
-then use command `bear -- ` before the above commands.
-For example, 
+then use command `bear --` before the above commands.
+For example,
 
-* `$ bear -- make debug`
-* `$ bear -- make test`
+* `$ bear -- make debug -j16`
+* `$ bear -- make test -j16`
 
 ### Method2: Build this Project with *CMakeLists.txt*
 
@@ -137,12 +137,10 @@ For example,
 * [x] Reference to the *CMakeLists.txt* old project
       and create one for this project, so that there
 	    will be two ways to build this project. Then,
-      add the demonstration of **cmake** way to
-	    this *README.md*
+      add the demonstration of **cmake** way to this *README.md*
 * [x] Fix `Solution::longestPalindrome` methods to
       pass its unit-tests
 * [ ] Consider to add `free()` function to free the
       resources used by `TreeNode *` and `ListNode *`.
-	    And add memory leak check g++ flag to the 
-	    *Makefile*
+	    And add memory leak check g++ flag to the *Makefile*
 * [ ] Try google test: **gtest** using **cmake** to build

@@ -14,7 +14,7 @@ SRCOBJ     := $(addprefix $(SRCOBJDIR)/,$(notdir $(patsubst %.cpp,%.o,$(SRC))))
 
 TESTDIR    := $(SRCDIR)/tests
 TESTTARDIR := $(TARDIR)/tests
-TEST	   := $(wildcard $(TESTDIR)/*.cpp)
+TEST	     := $(wildcard $(TESTDIR)/*.cpp)
 TESTBIN    := $(addprefix $(TESTTARDIR)/,$(notdir $(patsubst %.cpp,%.o,$(TEST))))
 
 CC         := g++
