@@ -29,18 +29,18 @@ OPT        := -g -O0 -std=c++17 -Werror -pedantic-errors
 
 # Build and Test Commands
 # -----------------------
-release: CXXFLAGS += -O2
-release: output 
-
 debug: CXXFLAGS += -g -O0 -Werror -pedantic-errors
 debug: output 
+
+release: CXXFLAGS += -O2
+release: output 
 
 output: $(LIBTARDIR)/lib$(LIBNAME).a $(LIBTARDIR)/local/lib$(LIBNAME).so
 
 test: $(basename $(TESTBIN)) 
 	for unit_test in $(basename $(TESTBIN)); do ./$$unit_test --log_level=all; done
 
-test_%: $(TESTTARDIR)/test_%
+test_%: $(TESTTARDIR)/test_% $(LIBTARDIR)/lib$(LIBNAME).a
 	$<
 
 clean: 

@@ -28,37 +28,41 @@ struct TreeNode
 };
 
 class Solution {
+  template <typename T>
+  using Vec = std::vector<T>;
+  using String = std::string;
 // Methods
 public:
-	ListNode*        addTwoNumbers(ListNode* l1, ListNode* l2);           // Problem #2   Add Two Numbers 
-	int              lengthOfLongestSubstring(std::string s);             // Problem #3   Longest Substring Without Repeating Characters
-	std::string      longestPalindrome(std::string s);                    // Problem #5   Longest Palindromic Substring
-	bool             isPalindrome(int x);                                 // Problem #9   Palindrome Number
-	int              romanToInt(std::string s);                           // Problem #13  Roman to Integer 
-	std::string      longestCommonPrefix(std::vector<std::string>& strs); // Problem #14  Longest Common Prefix 
-	bool             isValid(std::string s);                              // Problem #20  Valid Parentheses
-	ListNode*        mergeTwoLists(ListNode* list1, ListNode* list2);     // Problem #21  Merge Two Sorted Lists
-	int              removeDuplicates(std::vector<int>& nums);            // Problem #26  Remove Duplicates from Sorted Array
-	int              removeElement(std::vector<int>& nums, int val);      // Problem #27  Remove Element
-	int              strStr(std::string haystack, std::string needle);    // Problem #28  Implement strStr()
-	int              searchInsert(std::vector<int>& nums, int target);    // Problem #35  Search Insert Position
-	int              maxSubArray(std::vector<int>& nums);                 // Problem #53  Maximum Subarray	
-	int              lengthOfLastWord(std::string s);                     // Problem #58  Length of Last Word
-	std::vector<int> plusOne(std::vector<int>& digits);                   // Problem #66  Plus One
-	std::string      addBinary(std::string a, std::string b);             // Problem #67  Add Binary
-	int              mySqrt(int x);                                       // Problem #69  Sqrt(x)	
-	int              climbStairs(int n);                                  // Problem #70  Climbing Stairs
-	ListNode*        deleteDuplicates(ListNode* head);                    // Problem #83  Remove Duplicates from Sorted List
-	std::vector<int> inorderTraversal(TreeNode* root);                    // Problem #94  Binary Tree Inorder Traversal
-	bool             isSameTree(TreeNode* p, TreeNode* q);                // Problem #100 Same Tree
-	bool             isSymmetric(TreeNode* root);                         // Problem #101 Symmetric Tree 
-	int              maxDepth(TreeNode* root);                            // Problem #104 Maximum Depth of Binary Tree 
-	TreeNode*        sortedArrayToBST(std::vector<int>& nums);            // Problem #108 Convert Sorted Array to Binary Search Tree
-	bool             isBalanced(TreeNode* root);                          // Problem #110 Balanced Binary Tree
-	int              minDepth(TreeNode* root);                            // Problem #111 Minimum Depth of Binary Tree
-	int              maxProfit(std::vector<int>& prices);                 // Problem #122 Best Time to Buy and Sell Stock II
-	void             reverseString(std::vector<char>& s);                 // Problem #344 Reverse String
-	int              fib(int n);                                          // Problem #509 Fibonacci Number
+	ListNode* addTwoNumbers(ListNode* l1, ListNode* l2);                 // #2    Add Two Numbers 
+	int       lengthOfLongestSubstring(String s);                        // #3    Longest Substring Without Repeating Characters
+	String    longestPalindrome(String s);                               // #5    Longest Palindromic Substring
+	bool      isPalindrome(int x);                                       // #9    Palindrome Number
+	int       romanToInt(String s);                                      // #13   Roman to Integer 
+	String    longestCommonPrefix(Vec<String>& strs);                    // #14   Longest Common Prefix 
+	bool      isValid(String s);                                         // #20   Valid Parentheses
+	ListNode* mergeTwoLists(ListNode* list1, ListNode* list2);           // #21   Merge Two Sorted Lists
+	int       removeDuplicates(Vec<int>& nums);                          // #26   Remove Duplicates from Sorted Array
+	int       removeElement(Vec<int>& nums, int val);                    // #27   Remove Element
+	int       strStr(String haystack, String needle);                    // #28   Implement strStr()
+	int       searchInsert(Vec<int>& nums, int target);                  // #35   Search Insert Position
+	int       maxSubArray(Vec<int>& nums);                               // #53   Maximum Subarray	
+	int       lengthOfLastWord(String s);                                // #58   Length of Last Word
+	Vec<int>  plusOne(Vec<int>& digits);                                 // #66   Plus One
+	String    addBinary(String a, String b);                             // #67   Add Binary
+	int       mySqrt(int x);                                             // #69   Sqrt(x)	
+	int       climbStairs(int n);                                        // #70   Climbing Stairs
+	ListNode* deleteDuplicates(ListNode* head);                          // #83   Remove Duplicates from Sorted List
+	Vec<int>  inorderTraversal(TreeNode* root);                          // #94   Binary Tree Inorder Traversal
+	bool      isSameTree(TreeNode* p, TreeNode* q);                      // #100  Same Tree
+	bool      isSymmetric(TreeNode* root);                               // #101  Symmetric Tree 
+	int       maxDepth(TreeNode* root);                                  // #104  Maximum Depth of Binary Tree 
+	TreeNode* sortedArrayToBST(Vec<int>& nums);                          // #108  Convert Sorted Array to Binary Search Tree
+	bool      isBalanced(TreeNode* root);                                // #110  Balanced Binary Tree
+	int       minDepth(TreeNode* root);                                  // #111  Minimum Depth of Binary Tree
+	int       maxProfit(Vec<int>& prices);                               // #122  Best Time to Buy and Sell Stock II
+	void      reverseString(Vec<char>& s);                               // #344  Reverse String
+	int       fib(int n);                                                // #509  Fibonacci Number
+  Vec<int>  countSubTrees(int n, Vec<Vec<int>>& edges, String labels); // #1519 Number of Nodes in the Sub-Tree With the Same Label
 
 // Comparsion utilities
 public:
